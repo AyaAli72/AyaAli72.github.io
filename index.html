@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aya Ali | AI Engineer</title>
+<meta name="description" content="Aya Ali – AI Engineer specializing in machine learning, NLP, computer vision and AI-driven cybersecurity.">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#111833; --card:#151d3b; --line:#242e57;
+  --text:#e8ecff; --muted:#9aa6d4; --accent:#6ee7c8; --accent2:#7c8cff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .logo{font-weight:700;color:var(--text)}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+nav ul a{color:var(--muted);font-size:.92rem}
+nav ul a:hover{color:var(--accent);text-decoration:none}
+.hero{padding:96px 0 72px;background:radial-gradient(900px 400px at 80% -10%,rgba(124,140,255,.25),transparent),radial-gradient(700px 400px at 0% 0%,rgba(110,231,200,.14),transparent)}
+.hero .tag{color:var(--accent);font-family:ui-monospace,Menlo,monospace;font-size:.9rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;margin:10px 0}
+.hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:680px;color:var(--muted);font-size:1.08rem}
+.btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--line);color:var(--text)}
+.btn.primary{background:var(--accent);color:#06251d;border-color:var(--accent)}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat b{display:block;font-size:1.7rem;color:var(--accent)}
+.stat small{color:var(--muted)}
+section{padding:72px 0}
+section.alt{background:var(--bg2)}
+h2{font-size:1.8rem;margin-bottom:8px}
+h2::after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:8px;border-radius:2px}
+.lead{color:var(--muted);max-width:760px;margin:18px 0 0}
+.timeline{margin-top:30px;border-left:2px solid var(--line);padding-left:24px}
+.item{position:relative;margin-bottom:30px}
+.item::before{content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+section.alt .item::before{box-shadow:0 0 0 4px var(--bg2)}
+.item h3{font-size:1.1rem}
+.meta{color:var(--muted);font-size:.88rem;margin:2px 0 8px}
+.item ul{padding-left:18px;color:#cdd4f5}
+.item li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent2)}
+.card h3{font-size:1.08rem;margin-bottom:6px}
+.card p{color:#cdd4f5;font-size:.95rem;flex:1}
+.pill{display:inline-block;font-size:.76rem;padding:3px 10px;border-radius:99px;background:rgba(124,140,255,.15);color:#b9c1ff;margin:10px 6px 0 0}
+.metric{color:var(--accent);font-weight:700}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:30px}
+.skills .card h3{color:var(--accent)}
+.cert li{margin:6px 0;color:#cdd4f5}
+.cert ul{padding-left:18px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:30px}
+.contact{text-align:center}
+.contact h2::after{margin:8px auto 0}
+.contact .btns{justify-content:center}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media(max-width:640px){nav ul{display:none}.hero{padding-top:64px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Aya Ali</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="tag">&gt; hello, world — I'm</div>
+    <h1>Aya Ali,<br><span>AI Engineer</span></h1>
+    <p>I build machine learning systems for text and image analysis, with a focus on NLP, computer vision and AI-driven cybersecurity: phishing detection, malware analysis and secure AI deployment.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn" href="https://github.com/AyaAli72" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/aya-ali-45a4b9242" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>99.5%</b><small>Malware detection accuracy</small></div>
+      <div class="stat"><b>~96%</b><small>Phishing email classification</small></div>
+      <div class="stat"><b>94.6%</b><small>Symptom triage (EN)</small></div>
+      <div class="stat"><b>~90%</b><small>Robot obstacle avoidance (sim)</small></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lead">AI Engineer with a B.Sc. in Electrical Engineering (Alexandria, 2020–2025, GPA 3.11). I design, evaluate and optimize data-driven models using Python, TensorFlow and PyTorch, and I care about taking them from notebook to a working, secure API. I'm motivated to contribute to innovative, secure and scalable AI systems, especially threat detection and anomaly analysis.</p>
+  </div>
+</section>
+
+<section id="experience" class="alt">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="item">
+        <h3>AI &amp; Cybersecurity Engineer — Smart Scientific Solutions</h3>
+        <div class="meta">04/2026 – Present · Alexandria, Egypt</div>
+        <ul>
+          <li>Building AI and security solutions with LLMs, RAG, computer vision and NLP using Python, PyTorch, Hugging Face, Qdrant, FastAPI and Docker.</li>
+          <li>Developed phishing and malware detection systems and document intelligence / authenticity analysis pipelines.</li>
+          <li>Worked on secure Odoo/PostgreSQL and cloud environments: API security, RBAC, MFA and enterprise infrastructure.</li>
+          <li>Contributed to ISO 27001:2022 implementation, security controls, data protection and secure AI deployment.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Phishing Mails Detector — Digital Fortress (UKE, Remote)</h3>
+        <div class="meta">12/2025 – 02/2026</div>
+        <ul>
+          <li>Designed AI-driven phishing detection to improve early threat identification for cyber defense operations.</li>
+          <li>Built multi-layer ML pipelines: TF-IDF, encoder-based representations, Logistic Regression, ensembles and transformer models.</li>
+          <li>Reached <span class="metric">~96% accuracy</span> and a high F1-score, generating automated risk scores and threat labels.</li>
+          <li>Deployed models to a web-ready backend via APIs for real-time detection.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>AI-Cyber Security Scholarship — National Telecommunication Institute (NTI)</h3>
+        <div class="meta">09/2025 – 02/2026 · Alexandria</div>
+        <ul>
+          <li>Selected for the competitive NTI AI–Cybersecurity program; designed, developed and evaluated ML models for phishing detection and malware analysis using Python and TensorFlow.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>AI Junior Intern — Elevvo Pathway</h3>
+        <div class="meta">07/2025 – 08/2025 · Online</div>
+        <ul>
+          <li>Built CNN and classical ML models (DBSCAN, regression) with TensorFlow and Scikit-learn, achieving up to <span class="metric">82.4% improvement</span> in prediction accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Organizer &amp; App Developer — RoboRAVE International Competition</h3>
+        <div class="meta">04/2025 – 07/2025 · E-JUST, Alexandria</div>
+        <ul>
+          <li>Developed a real-time mobile app showing competition results across categories with instant score updates, improving transparency for participants and organizers.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Malware Detection AI System</h3>
+        <p>End-to-end malware detection using ensemble ML (<span class="metric">99.5% accuracy</span>), static PE analysis and external threat-intelligence integration, deployed as a FastAPI web app in a team environment.</p>
+        <div><span class="pill">Ensemble ML</span><span class="pill">PE Analysis</span><span class="pill">FastAPI</span></div>
+      </div>
+
+      <div class="card">
+        <h3>RAG-based Document Q&amp;A Chatbot</h3>
+        <p>Upload PDF/DOCX/TXT/URLs and query them with a locally hosted open-source LLM (Mistral-7B-Instruct, 4-bit). Full pipeline: chunking, embeddings, FAISS search and grounded prompting. Evaluation: Hit Rate@k 1.0, MRR 1.0, faithfulness 0.75, answer relevancy 0.76.</p>
+        <div><span class="pill">LangChain</span><span class="pill">FAISS</span><span class="pill">Transformers</span><span class="pill">Gradio</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Symptom-to-Specialist Triage Classifier</h3>
+        <p>Fine-tuned a bilingual (EN/AR) DistilBERT model routing symptoms to 9 medical specialties (<span class="metric">94.6% EN / 85.9% AR</span>), with a rule-based safety layer for emergency detection and out-of-scope rejection.</p>
+        <div><span class="pill">DistilBERT</span><span class="pill">PyTorch</span><span class="pill">Hugging Face</span><span class="pill">Gradio</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Phishing Email Detector</h3>
+        <p>Multi-layer ML pipeline (TF-IDF, transformers, ensembles) with automated risk scoring and threat labels, served through an API for real-time use.</p>
+        <div><span class="pill">NLP</span><span class="pill">Scikit-learn</span><span class="pill">API</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Autonomous Delivery Robot (Graduation Project)</h3>
+        <p>Autonomous robot with RRT-based path planning and YOLOv11 real-time object detection (~90% obstacle avoidance in simulation), plus a Flutter Android app for monitoring and commands.</p>
+        <div><span class="pill">YOLOv11</span><span class="pill">RRT</span><span class="pill">Flutter</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Machine Learning Models (AI Course)</h3>
+        <p>Multiple ML projects covering preprocessing, feature engineering, supervised learning and text classification, with deployment-ready pipelines and API integration.</p>
+        <div><span class="pill">Scikit-learn</span><span class="pill">TensorFlow</span><span class="pill">Python</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Programming &amp; Tools</h3><p>Python, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Flask/FastAPI, Docker, PostgreSQL, Odoo</p></div>
+      <div class="card"><h3>AI &amp; Deep Learning</h3><p>Computer vision, NLP, LLMs &amp; RAG, supervised learning, ensemble methods, text classification, transformers, feature engineering</p></div>
+      <div class="card"><h3>Cybersecurity &amp; AI</h3><p>Phishing detection, malware analysis, threat classification, risk scoring, penetration testing, code encryption, real-time model deployment</p></div>
+      <div class="card"><h3>Other</h3><p>Data preprocessing, model evaluation, API development, web integration</p></div>
+      <div class="card"><h3>Soft Skills</h3><p>Leadership, teamwork, problem-solving, communication, presentation</p></div>
+      <div class="card"><h3>Languages</h3><p>English (Fluent) · German (Basic)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <h2>Certificates &amp; Education</h2>
+    <div class="two">
+      <div class="card cert">
+        <h3>Certificates</h3>
+        <ul>
+          <li><b>NTI Egypt:</b> AI-Cyber Security Scholarship</li>
+          <li><b>Stanford Online:</b> Advanced Computer Vision with TensorFlow, Custom &amp; Distributed Training, CNN in TensorFlow, Deep Learning, Basics of ML, Custom Models/Layers/Loss Functions</li>
+          <li><b>Harvard:</b> CS50's Introduction to AI with Python</li>
+          <li><b>MathWorks:</b> App Building, Control Design</li>
+          <li><b>Mahara Tech:</b> Database Fundamentals, Deep Learning with PyTorch (Vision &amp; NLP), Deep Learning for NLP</li>
+          <li><b>Others:</b> Flutter UI, Autonomous Vehicles, C Language, Microcontroller Interface, Arduino</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:18px">
+          <h3>B.Sc. Electrical Engineering</h3>
+          <p>Faculty of Engineering, Alexandria · 09/2020 – 07/2025 · GPA 3.11<br>AI model design, autonomous vehicle systems, cybersecurity concepts.</p>
+        </div>
+        <div class="card">
+          <h3>Volunteer Experience</h3>
+          <p><b>ChairLady, Start Menu Union (SMU)</b> · 11/2024 – 10/2025<br>Led initiatives, organized technical workshops, managed team workflows and mentored student projects.<br><br>
+          <b>Volunteer, Student Union</b> – Faculty of Engineering, Alexandria University · 01/2020 – 01/2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <h2>Let's work together</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Interested in AI, ML or AI-security work? I'd love to hear from you.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:aaya42727@gmail.com">aaya42727@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/aya-ali-45a4b9242" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/AyaAli72" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Aya Ali · Alexandria, Egypt</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
