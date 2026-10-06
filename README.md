@@ -14,8 +14,8 @@ Personal portfolio website (single static page, no build step).
    git remote add origin https://github.com/AyaAli72/AyaAli72.github.io.git
    git push -u origin main
    ```
-3. Go to **Settings → Pages**, set **Source: Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
-4. After a minute your site is live at **https://AyaAli72.github.io**.
+3. Go to **Settings → Pages**, set **Source: Deploy from a branch**, branch `master`, folder `/ (root)`, then Save.
+4. After a minute your site is live at **[https://AyaAli72.github.io](https://ayaali72.github.io/)**.
 
 ## Customize
 
